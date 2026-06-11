@@ -1,0 +1,6 @@
+# Minimal dependencies of the social module (review copy).
+httpx==0.28.*          # reddit_json transport
+sqlalchemy==2.0.*      # raw-SQL storage layer
+psycopg[binary]==3.2.* # postgres driver (db-backed tests)
+praw==7.*              # reddit_oauth adapter (production path, pending approval)
+google-genai==2.*      # batched sentiment labeling (optional at runtime)
